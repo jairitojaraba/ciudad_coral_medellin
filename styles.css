@@ -1500,3 +1500,45 @@ button {
     min-width: 32px;
   }
 }
+
+/* Ciudad Coral Medellín: dos funciones */
+.schedule-note {
+  margin: -2px 16px 10px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.schedule-item__time--icon {
+  font-size: 1.35rem;
+}
+
+.challenge-list .schedule-separator,
+.page > .schedule-separator {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+/* Emblema Ciudad Coral */
+.passport-seal {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  box-shadow: 0 14px 30px rgba(91, 22, 38, 0.22);
+}
+
+.passport-seal .seal {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+img.brand-button__logo {
+  display: block;
+  padding: 0;
+  background: none;
+  object-fit: cover;
+}

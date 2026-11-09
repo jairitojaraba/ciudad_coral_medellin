@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Ciudad Coral">
+  <defs>
+    <linearGradient id="ccIconBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8a6b"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="url(#ccIconBg)"/>
+  <g fill="none" stroke="#fffdf7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 100 C60 84 61 72 58 60 C56 52 53 46 51 38" stroke-width="11"/>
+    <path d="M59 80 C49 74 40 66 37 52" stroke-width="9"/>
+    <path d="M59 70 C70 64 78 56 81 42" stroke-width="9"/>
+  </g>
+  <g fill="#ffd93d">
+    <ellipse cx="49" cy="31" rx="11" ry="8.5" transform="rotate(-25 49 31)"/>
+    <ellipse cx="35" cy="45" rx="10" ry="7.5" transform="rotate(-25 35 45)"/>
+    <ellipse cx="83" cy="35" rx="11" ry="8.5" transform="rotate(-25 83 35)"/>
+  </g>
+  <path d="M14 104 Q26 96 38 104 T62 104 T86 104 T110 104" fill="none" stroke="#fffdf7" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -6,13 +6,15 @@
     <meta name="theme-color" content="#ff6b6b" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <title>La Ciudad Coral | Pasaporte</title>
+    <title>Ciudad Coral Medellín | Pasaporte</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/svg+xml" href="./assets/emblema-icono.svg" />
+    <link rel="apple-touch-icon" href="./assets/emblema-icono.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -26,15 +28,52 @@
       </div>
 
       <div class="cover__card">
-        <div class="passport-mark" aria-hidden="true">
-          <span class="passport-mark__wave">♪</span>
-          <span class="passport-mark__coral"></span>
-          <span class="passport-mark__wave passport-mark__wave--right">♫</span>
+        <div class="passport-seal">
+          <svg class="seal" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="ccSealBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff8a6b"/>
+                <stop offset="1" stop-color="#ec4899"/>
+              </linearGradient>
+              <path id="ccTop" d="M24,100 A76,76 0 0 1 176,100"/>
+              <path id="ccBottom" d="M14,100 A86,86 0 0 0 186,100"/>
+            </defs>
+            <circle cx="100" cy="100" r="98" fill="#fffdf7"/>
+            <circle cx="100" cy="100" r="94" fill="none" stroke="#ff6b6b" stroke-width="3"/>
+            <circle cx="100" cy="100" r="66" fill="none" stroke="#ff6b6b" stroke-width="1.5"/>
+            <g font-family="Fredoka, 'Arial Rounded MT Bold', sans-serif" font-weight="700" fill="#17142a" text-anchor="middle">
+              <text font-size="17" letter-spacing="4"><textPath href="#ccTop" startOffset="50%">CIUDAD CORAL</textPath></text>
+              <text font-size="11.5" letter-spacing="2.6"><textPath href="#ccBottom" startOffset="50%">SEDE MEDELLÍN · 2026</textPath></text>
+            </g>
+            <circle cx="19" cy="100" r="3.2" fill="#ff6b6b"/>
+            <circle cx="181" cy="100" r="3.2" fill="#ff6b6b"/>
+            <circle cx="100" cy="100" r="60" fill="url(#ccSealBg)"/>
+            <g fill="#fffdf7" opacity=".55">
+              <circle cx="140" cy="68" r="3"/>
+              <circle cx="146" cy="56" r="2"/>
+              <circle cx="62" cy="64" r="2.4"/>
+            </g>
+            <g fill="none" stroke="#fffdf7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M100 146 C100 130 101 118 98 106 C96 96 93 88 91 78" stroke-width="8"/>
+              <path d="M99 124 C90 118 83 110 81 98 L80 92" stroke-width="6.5"/>
+              <path d="M82 107 C75 105 70 101 67 95" stroke-width="5"/>
+              <path d="M99 115 C108 109 116 101 118 89 L119 83" stroke-width="6.5"/>
+              <path d="M116 99 C123 98 129 95 132 90" stroke-width="5"/>
+            </g>
+            <g fill="#ffd93d">
+              <ellipse cx="89" cy="73" rx="9" ry="6.8" transform="rotate(-25 89 73)"/>
+              <ellipse cx="78" cy="87" rx="7.6" ry="5.8" transform="rotate(-25 78 87)"/>
+              <ellipse cx="65" cy="91" rx="6.4" ry="4.9" transform="rotate(-25 65 91)"/>
+              <ellipse cx="120" cy="78" rx="9" ry="6.8" transform="rotate(-25 120 78)"/>
+              <ellipse cx="134" cy="86" rx="6.4" ry="4.9" transform="rotate(-25 134 86)"/>
+            </g>
+            <path d="M56 146 Q67 139 78 146 T100 146 T122 146 T144 146" fill="none" stroke="#fffdf7" stroke-width="5" stroke-linecap="round"/>
+          </svg>
         </div>
-        <p class="eyebrow" data-i18n="schoolLine">San José de las Vegas · Upper Middle School</p>
+        <p class="eyebrow" data-i18n="schoolLine">San José de las Vegas · Upper Middle School · Medellín</p>
         <h1 data-i18n="coverTitle">Pasaporte permanente</h1>
-        <p class="cover__subtitle" data-i18n="appTitle">La Ciudad Coral</p>
-        <p class="cover__meta" data-i18n="eventMeta">Sede El Retiro · Sábado 6 de junio de 2026</p>
+        <p class="cover__subtitle" data-i18n="appTitle">Ciudad Coral</p>
+        <p class="cover__meta" data-i18n="eventMeta">Sede El Retiro · Sábado 21 de noviembre de 2026</p>
         <button class="primary-action" type="button" id="open-passport" data-i18n="openPassport">
           Abrir pasaporte
         </button>
@@ -47,8 +86,8 @@
     <div class="app-shell" id="app-shell">
       <header class="top-bar">
         <button class="brand-button" type="button" data-nav-target="home" aria-label="Ir al inicio">
-          <span class="brand-button__logo" aria-hidden="true">🌊</span>
-          <span class="brand-button__text" data-i18n="appTitle">La Ciudad Coral</span>
+          <img class="brand-button__logo" src="./assets/emblema-icono.svg" alt="" />
+          <span class="brand-button__text" data-i18n="appTitle">Ciudad Coral</span>
         </button>
 
         <div class="top-bar__right">
